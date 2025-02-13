@@ -11,15 +11,6 @@
 - [about.html](https://marseille78.github.io/trust-md/about.html)
 - [account.html](https://marseille78.github.io/trust-md/account.html)
 
-## [Ed-Solution](https://github.com/marseille78/ed-solution)
+## [Aviator](https://github.com/marseille78/aviator)
 
-- [index.html](https://marseille78.github.io/ed-solution/)
-- [product.html](https://marseille78.github.io/ed-solution/product.html)
-- [shopping.html](https://marseille78.github.io/ed-solution/shopping.html)
-- [catalog.html](https://marseille78.github.io/ed-solution/catalog.html)
-- [contact.html](https://marseille78.github.io/ed-solution/contact.html)
-- [faq.html](https://marseille78.github.io/ed-solution/faq.html)
-- [about.html](https://marseille78.github.io/ed-solution/about.html)
-- [policies.html](https://marseille78.github.io/ed-solution/policies.html)
-- [bonuses.html](https://marseille78.github.io/ed-solution/bonuses.html)
-- [account.html](https://marseille78.github.io/ed-solution/account.html)
+- [index.html](https://marseille78.github.io/aviator/)
