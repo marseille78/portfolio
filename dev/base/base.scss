@@ -84,7 +84,7 @@ svg {
 .page__header {
   background-color: $c_bg_second;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .page__section {
   padding: 60px 0;
@@ -98,8 +98,12 @@ svg {
     position: relative;
   }
 }
+.page__section--services {
+  z-index: 2;
+}
 .page__section--portfolio {
   background-color: $c_bg_second;
+  z-index: 1;
 }
 .page__footer {
   padding: 60px 0;
