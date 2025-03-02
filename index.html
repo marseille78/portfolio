@@ -14,38 +14,34 @@
 </head>
 
 <body class="page">
-    <header class="page__header">
-        <div class="container">
-            <!-- START .header -->
+    <header class="page__header" id="header">
+        <div class="container"><!-- START .header -->
             <div class="header">
-                <div class="header__top">
-                    <button class="header__open-menu">
+                <div class="header__top" data-top-menu="data-top-menu">
+                    <button class="header__open-menu d-lg-none" data-menu-open="data-menu-open" type="button">
                         <svg>
                             <use href="img/sprite.svg#menu"></use>
                         </svg>
                     </button>
                     <!-- START .menu -->
-                    <nav class="menu">
-                        <button class="menu__close-menu">
+                    <nav class="menu" data-menu="data-menu">
+                        <button class="menu__close-menu d-lg-none" data-menu-close="data-menu-close" type="button">
                             <svg>
                                 <use href="img/sprite.svg#menu-close"></use>
                             </svg>
                         </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#!" class="menu__link active">Home</a>
+                                <a href="#!" class="menu__link" data-menu-link="header">Home</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#!" class="menu__link">Works</a>
+                                <a href="#!" class="menu__link" data-menu-link="services">Services</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#!" class="menu__link">Services</a>
+                                <a href="#!" class="menu__link" data-menu-link="portfolio">Portfolio</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#!" class="menu__link">About</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#!" class="menu__link">Contact</a>
+                                <a href="#!" class="menu__link" data-menu-link="footer">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,17 +51,18 @@
                     <div class="header__text">
                         <h1 class="header__title"> Ruslan Boiko <span>Frontend-developer</span>
                         </h1>
-                        <div class="header__desc"> I'm a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here. </div>
+                        <div class="header__desc"> Helping IT companies in developing client part of their projects. </div>
                     </div>
                     <div class="header__view">
                         <img src="img/hero.png" alt="hero" />
                     </div>
                 </div>
+                <div class="backdrop"></div>
             </div>
             <!-- END .header -->
         </div>
     </header>
-    <section class="page__section page__section--services">
+    <section class="page__section page__section--services" id="services">
         <div class="container">
             <!-- START .services -->
             <div class="services">
@@ -94,7 +91,7 @@
             <!-- END .services -->
         </div>
     </section>
-    <section class="page__section page__section--portfolio">
+    <section class="page__section page__section--portfolio" id="portfolio">
         <div class="container">
             <!-- START .portfolio -->
             <div class="portfolio">
@@ -102,18 +99,47 @@
                 <div class="portfolio__list">
                     <div class="portfolio__item">
                         <div class="portfolio__view">
-                            <img src="img/project-1.jpg" alt="project">
+                            <a href="https://marseille78.github.io/trust-md/" target="_blank">
+                                <img src="img/project-1.jpg" alt="project">
+                            </a>
                         </div>
-                        <div class="portfolio__link">
-                            <a href="#1">Project 1</a>
+                        <div class="portfolio__desc">
+                            <div class="portfolio__project-title">
+                                <a href="https://marseille78.github.io/trust-md/" target="_blank">Trust MD</a>
+                                <span>(Multi-page website)</span>
+                            </div>
+                            <div class="portfolio__pages">
+                                <span>Pages:</span>
+                                <a href="https://marseille78.github.io/trust-md/" target="_blank">Homepage</a>
+                                <a href="https://marseille78.github.io/trust-md/product.html" target="_blank">Product</a>
+                                <a href="https://marseille78.github.io/trust-md/contacts.html" target="_blank">Contacts</a>
+                                <a href="https://marseille78.github.io/trust-md/test.html" target="_blank">Test</a>
+                                <a href="https://marseille78.github.io/trust-md/faq.html" target="_blank">FAQ</a>
+                                <a href="https://marseille78.github.io/trust-md/policies.html" target="_blank">Policies</a>
+                                <a href="https://marseille78.github.io/trust-md/bonuses.html" target="_blank">Bonuses</a>
+                                <a href="https://marseille78.github.io/trust-md/testimonials.html" target="_blank">Testimonials</a>
+                                <a href="https://marseille78.github.io/trust-md/about.html" target="_blank">About</a>
+                                <a href="https://marseille78.github.io/trust-md/account.html" target="_blank">Account</a>
+                            </div>
+                            <div class="portfolio__technologies">
+                                <span>Technologies:</span> HTML, CSS, JavaScript
+                            </div>
                         </div>
                     </div>
                     <div class="portfolio__item">
                         <div class="portfolio__view">
-                            <img src="img/project-2.jpg" alt="project">
+                            <a href="https://marseille78.github.io/aviator/" target="_blank">
+                                <img src="img/project-2.jpg" alt="project">
+                            </a>
                         </div>
-                        <div class="portfolio__link">
-                            <a href="#1">Project 2</a>
+                        <div class="portfolio__desc">
+                            <div class="portfolio__project-title">
+                                <a href="https://marseille78.github.io/aviator/" target="_blank">Aviator</a>
+                                <span>(Landing page)</span>
+                            </div>
+                            <div class="portfolio__technologies">
+                                <span>Technologies:</span> HTML, CSS, JavaScript
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,16 +147,35 @@
             <!-- END .portfolio -->
         </div>
     </section>
-    <footer class="page__footer">
-        <div class="container">
-            <!-- START .footer -->
+    <footer class="page__footer" id="footer">
+        <div class="container"><!-- START .footer -->
             <div class="footer">
                 <!-- START .contacts -->
                 <div class="contacts">
                     <h2 class="contacts__title">Contacts</h2>
                     <div class="contacts__desc"> Want to know more or just chat? <br> You are welcome! </div>
                     <div class="contacts__btn">
+                        <!-- START .btn -->
                         <a href="assets/Ruslan_Boiko_CV_en.pdf" target="_blank" class="btn">Resume</a>
+                        <!-- END .btn -->
+                    </div>
+                    <div class="contacts__social">
+                        <ul class="contacts__social-list">
+                            <li class="contacts__social-item">
+                                <a href="https://www.linkedin.com/in/ruslan-boiko/" class="contacts__social-link" target="_blank">
+                                    <svg>
+                                        <use href="img/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="contacts__social-item">
+                                <a href="mailto:boyko.ruslan78@gmail.com" class="contacts__social-link">
+                                    <svg>
+                                        <use href="img/sprite.svg#email"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <!-- END .contacts -->
@@ -138,8 +183,7 @@
             <!-- END .footer -->
         </div>
     </footer>
-    <div class="backdrop"></div>
-    <!-- <script src="js/libs.min.js"></script> -->
+    <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
