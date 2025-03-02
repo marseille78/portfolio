@@ -74,7 +74,7 @@ svg {
 .page__header {
   background-color: #f1f1f1;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .page__section {
@@ -82,8 +82,13 @@ svg {
   background-color: #fff;
 }
 
+.page__section--services {
+  z-index: 2;
+}
+
 .page__section--portfolio {
   background-color: #f1f1f1;
+  z-index: 1;
 }
 
 .page__footer {
