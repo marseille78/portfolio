@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("../base/head.html", { author: false, description: false, title:
+  "Portfolio", hasCssLibs: true })
+
+  <body class="page">
+    <header class="page__header" id="header">
+      <div class="container">@@include("../layout/header/header.html")</div>
+    </header>
+
+    <section class="page__section page__section--services" id="services">
+      <div class="container">
+        @@include("../components/services/services.html")
+      </div>
+    </section>
+
+    <section class="page__section page__section--portfolio" id="portfolio">
+      <div class="container">
+        @@include("../components/portfolio/portfolio.html")
+      </div>
+    </section>
+
+    <footer class="page__footer" id="footer">
+      <div class="container">@@include("../layout/footer/footer.html")</div>
+    </footer>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

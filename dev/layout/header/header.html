@@ -1,0 +1,33 @@
+<!-- START .header -->
+<div class="header">
+  <div class="header__top" data-top-menu="data-top-menu">
+    <button
+      class="header__open-menu d-lg-none"
+      data-menu-open="data-menu-open"
+      type="button"
+    >
+      <svg>
+        <use href="img/sprite.svg#menu"></use>
+      </svg>
+    </button>
+
+    @@include("../../components/menu/menu.html")
+  </div>
+  <div class="header__body">
+    <div class="header__text">
+      <h1 class="header__title">
+        Ruslan Boiko
+        <span>Frontend-developer</span>
+      </h1>
+      <div class="header__desc">
+        Helping IT companies in developing client part of their projects.
+      </div>
+    </div>
+    <div class="header__view">
+      <img src="img/hero.png" alt="hero" />
+    </div>
+  </div>
+
+  <div class="backdrop"></div>
+</div>
+<!-- END .header -->

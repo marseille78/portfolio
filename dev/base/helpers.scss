@@ -1,0 +1,13 @@
+/* .helpers */
+// @media (min-width: $xs) { /* .helpers $xs */ }
+// @media (min-width: $sm) { /* .helpers $sm */ }
+// @media (min-width: $md) { /* .helpers $md */ }
+@media (min-width: $lg) { /* .helpers $lg */ }
+// @media (min-width: $xl) { /* .helpers $xl */ }
+// @media (min-width: $xxl) { /* .helpers $xxl */ }
+
+@media (min-width: $lg) {
+  .d-lg-none {
+    display: none !important;
+  }
+}

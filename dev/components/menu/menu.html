@@ -1,0 +1,16 @@
+<!-- START .menu -->
+<nav class="menu" data-menu="data-menu">
+  <button
+    class="menu__close-menu d-lg-none"
+    data-menu-close="data-menu-close"
+    type="button"
+  >
+    <svg>
+      <use href="img/sprite.svg#menu-close"></use>
+    </svg>
+  </button>
+  <ul class="menu__list">
+    @@loop("./menu__item.html", "./data/menu.json")
+  </ul>
+</nav>
+<!-- END .menu -->

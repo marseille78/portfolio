@@ -1,0 +1,41 @@
+/* .contacts */
+// @media (min-width: $xs) { /* .contacts $xs */ }
+// @media (min-width: $sm) { /* .contacts $sm */ }
+// @media (min-width: $md) { /* .contacts $md */ }
+// @media (min-width: $lg) { /* .contacts $lg */ }
+// @media (min-width: $xl) { /* .contacts $xl */ }
+// @media (min-width: $xxl) { /* .contacts $xxl */ }
+
+.contacts {
+  text-align: center;
+}
+.contacts__title {
+  margin: 0 0 20px;
+}
+.contacts__desc {
+  margin-bottom: 20px;
+}
+.contacts__btn {
+  margin-bottom: 70px;
+}
+.contacts__social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contacts__social-item {
+  display: inline-block;
+}
+.contacts__social-link {
+  svg {
+    height: 40px;
+    width: 40px;
+    fill: #000;
+    transition: fill $anim;
+  }
+}
+.contacts__social-link:hover {
+  svg {
+    fill: #828282;
+  }
+}

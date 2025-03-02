@@ -1,0 +1,6 @@
+[
+  { "label": "Home", "className": "menu__link", "href": "header" },
+  { "label": "Services", "className": "menu__link", "href": "services" },
+  { "label": "Portfolio", "className": "menu__link", "href": "portfolio" },
+  { "label": "Contact", "className": "menu__link", "href": "footer" }
+]

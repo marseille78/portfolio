@@ -1,0 +1,23 @@
+/* .btn */
+// @media (min-width: $xs) { /* .btn $xs */ }
+// @media (min-width: $sm) { /* .btn $sm */ }
+// @media (min-width: $md) { /* .btn $md */ }
+// @media (min-width: $lg) { /* .btn $lg */ }
+// @media (min-width: $xl) { /* .btn $xl */ }
+// @media (min-width: $xxl) { /* .btn $xxl */ }
+
+.btn {
+  background-color: #070707;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding: 7px 22px;
+  border-radius: 20px;
+  transition: background-color $anim;
+
+  &:hover {
+    background-color: #828282;
+  }
+}

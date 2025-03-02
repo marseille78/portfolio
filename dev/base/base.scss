@@ -1,0 +1,110 @@
+/* base */
+// @media (min-width: $xs) { /* base $xs */ }
+// @media (min-width: $sm) { /* base $sm */ }
+// @media (min-width: $md) { /* base $md */ }
+@media (min-width: $lg) {
+  /* base $lg */
+}
+// @media (min-width: $xl) { /* base $xl */ }
+// @media (min-width: $xxl) { /* base $xxl */ }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: $ff_base;
+  font-size: 14px;
+  line-height: 2;
+  color: $c_text;
+  background-size: 100% auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 51px;
+
+  @media (min-width: $lg) {
+    font-size: 44px;
+    line-height: 66px;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  line-height: 51px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $anim;
+
+  &.opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.page__header {
+  background-color: $c_bg_second;
+  position: relative;
+  z-index: 2;
+}
+.page__section {
+  padding: 60px 0;
+  background-color: #fff;
+
+  @media (min-width: $lg) {
+    padding: 90px 0;
+
+    padding-top: 230px;
+    margin-top: -140px;
+    position: relative;
+  }
+}
+.page__section--portfolio {
+  background-color: $c_bg_second;
+}
+.page__footer {
+  padding: 60px 0;
+
+  @media (min-width: $lg) {
+    padding: 90px 0;
+  }
+}

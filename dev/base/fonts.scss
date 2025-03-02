@@ -1,0 +1,24 @@
+// font-family: 'Lato', sans-serif; (400, 700)
+// font-family: 'Open Sans', sans-serif; (400, 700)
+// font-family: 'Raleway', sans-serif; (700)
+// font-family: 'Roboto', sans-serif; (400, 900)
+
+// ***************************************
+// Mixins
+// ***************************************
+@mixin fontFace($font, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font);
+    src: url(#{$path}.woff) format("woff"),
+    url(#{$path}.woff2) format("woff2"),
+    url(#{$path}.ttf) format("ttf");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// Подключение шрифтов
+// @include fontFace('Helvetica', '../fonts/helvetica-regular/helvetica-regular', 400, 'normal');
+// @include fontFace('Helvetica', '../fonts/helvetica-bold/helvetica-bold', 700, 'normal');
+// @include fontFace('Helvetica', '../fonts/helvetica/helvetica', 400, 'normal');
+// @include fontFace('Helvetica', '../fonts/helvetica-bold/helvetica-bold', 700, 'normal');
