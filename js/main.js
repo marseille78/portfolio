@@ -89,6 +89,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!elMenu || !btnMenuOpen || !btnMenuClose) return;
     new Menu(elMenu, btnMenuOpen, btnMenuClose);
   })();
+
+  /*************************************
+   * Animation
+   ************************************/
+  (function() {
+    AOS.init();
+  })();
 });
 
 function clearAllOpened() {

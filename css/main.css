@@ -273,10 +273,14 @@ svg {
   padding: 0;
 }
 
+.menu__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .menu__link {
   text-decoration: none;
   color: #828282;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 34px;
   line-height: 51px;
   -webkit-transition: color 300ms ease-in-out;
@@ -436,7 +440,6 @@ svg {
     left: 0;
     right: 0;
     height: 140px;
-    padding: 0 30px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -468,6 +471,10 @@ svg {
     line-height: 66px;
   }
 
+  .header__view img {
+    width: 440px;
+  }
+
   /* .menu $lg */
 
   .menu {
@@ -478,10 +485,17 @@ svg {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
-    width: auto;
-    max-width: none;
-    padding: 0;
+    padding: 0 30px;
     background-color: transparent;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    max-width: 1230px;
+    margin: 0 auto;
   }
 
   .menu__item {
@@ -490,6 +504,10 @@ svg {
 
   .menu__item:not(:first-child) {
     margin-left: 50px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .menu__link {
