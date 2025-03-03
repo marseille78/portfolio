@@ -25,10 +25,13 @@
     position: static;
     transform: none;
     transition: none;
-    width: auto;
-    max-width: none;
-    padding: 0;
+    padding: 0 30px;
     background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1230px;
+    margin: 0 auto;
   }
 
   &.opened {
@@ -65,16 +68,26 @@
 .menu__item {
   @media (min-width: $lg) {
     display: inline-block;
+  }
 
-    &:not(:first-child) {
+  &:not(:first-child) {
+    @media (min-width: $lg) {
       margin-left: 50px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (min-width: $lg) {
+      margin-bottom: 0;
     }
   }
 }
 .menu__link {
   text-decoration: none;
   color: #828282;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 34px;
   line-height: 51px;
   transition: color $anim;
